@@ -1,2 +1,2 @@
 # Theoretical-Algorithms-Implementation
-Implementing CLRS Pseudocode into Python/C++
+Implementing CLRS Pseudocode algorithms into Python/C++
