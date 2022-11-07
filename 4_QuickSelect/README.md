@@ -3,3 +3,5 @@ Implenting the Quick Select Algorithm that finds the k'th largest item in an uns
 Usage:
 The compiled object file is named QuickSelect. Example usage:
 	./QuickSelect 
+
+![Example Usage](/4_QuickSelect/Example-Usage.png?raw=true)
