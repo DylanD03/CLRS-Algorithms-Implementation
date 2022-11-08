@@ -50,7 +50,7 @@ def main():
 	start_elementary_multiply = time.time()
 	z = x * y
 	end_elementary_multiply = time.time()
-	print("Time for Elementary Multiplication O(n^2):", end_karatsuba - start_karatsubaend_elementary_multiply - start_elementary_multiply)
+	print("Time for Elementary Multiplication O(n^2):",  end_elementary_multiply - start_elementary_multiply)
 
 
 if __name__ == "__main__":
