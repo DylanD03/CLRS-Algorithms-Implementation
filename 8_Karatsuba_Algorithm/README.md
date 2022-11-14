@@ -1,5 +1,5 @@
-Karatsuba's Algorithm: Idea
-
+# Karatsuba's Algorithm: Idea
+```
 Instead of having 4 subproblems (multiplications), we only need 3 using Karatsuba's algorithm.
 
 
@@ -33,7 +33,7 @@ r - p - q
 
 To run the program use:
 	python3 karatsuba_algorithm.py
-
+```
 ![Example Usage](/8_Karatsuba_Algorithm/Example-Usage.png?raw=true)
 
 
