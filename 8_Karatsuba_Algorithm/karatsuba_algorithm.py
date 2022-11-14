@@ -1,4 +1,5 @@
 import time
+DEBUG = False
 
 
 def karatsuba_multiply(I, J):
@@ -12,9 +13,9 @@ def karatsuba_multiply(I, J):
 
 	# Splitting I, and J. 
 	w = I >> (n_2) # first half of I
-	x = I % (w << n_2) # last half of I
+	x = I - (w << n_2) # last half of I
 	y = J >> (n_2) 
-	z = J % (y << n_2)
+	z = J - (y << n_2)
 
 	# subproblem 1: w * y
 	p = karatsuba_multiply(w, y)
@@ -23,7 +24,7 @@ def karatsuba_multiply(I, J):
 	q = karatsuba_multiply(x, z)
 
 	# subproblem 3: (w + x) * (y + z)
-	r = karatsuba_multiply(w+z, y+z)
+	r = karatsuba_multiply(w+x, y+z)
 
 	# Inexpensive : w * z + x * y 
 	middle_term = r - p - q 
@@ -56,16 +57,18 @@ def main():
 	print('y',y,'\n')
 
 	start_karatsuba = time.time()
-	karatsuba_multiply(x,y)
+	k1 = karatsuba_multiply(x,y)
 	end_karatsuba = time.time()
 	print("Time for Karatsuba's Algorithm ~O(n^1.58):", end_karatsuba - start_karatsuba, 's')
 
 
 	start_elementary_multiply = time.time()
-	elementary_multiply(x, y)
+	e1 = elementary_multiply(x, y)
 	end_elementary_multiply = time.time()
 	print("Time for Elementary Multiplication O(n^2):",  end_elementary_multiply - start_elementary_multiply, 's')
 
+	if DEBUG:
+		print(k1 - e1)
 
 if __name__ == "__main__":
 	main()
