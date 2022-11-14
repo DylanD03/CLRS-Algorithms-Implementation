@@ -5,7 +5,7 @@ def karatsuba_multiply(I, J):
 	# I = w * 2^(n/2) + x
 	# J = y * 2^(n/2) + z
 	n = max(I.bit_length(), J.bit_length())
-	if n <= 32:
+	if n <= 10:
 		return I*J # small numbers 
 
 	n_2 = n // 2
@@ -32,6 +32,20 @@ def karatsuba_multiply(I, J):
 	IJ = (p << (2*n_2)) + (middle_term << (n_2)) + q
 	return IJ
 
+def elementary_multiply(x, y):
+
+	strx=str(x)
+	stry=str(y)
+	value=0
+
+	for n in range(len(strx)):
+		for m in range(len(stry)):
+
+			prod = eval(strx[n]+"*"+stry[m])
+			power=10**((len(strx)-n-1)+(len(stry)-m-1))
+			value+=prod*power
+
+	return value
 
 
 def main():
@@ -39,18 +53,18 @@ def main():
 	x = 3141592653589793238462643383279502884197169399375105820974944592
 	y = 2718281828459045235360287471352662497757247093699959574966967627
 	print('x',x)
-	print('y',y)
+	print('y',y,'\n')
 
 	start_karatsuba = time.time()
 	karatsuba_multiply(x,y)
 	end_karatsuba = time.time()
-	print("Time for Karatsuba's Algorithm ~O(n^1.58):", end_karatsuba - start_karatsuba)
+	print("Time for Karatsuba's Algorithm ~O(n^1.58):", end_karatsuba - start_karatsuba, 's')
 
 
 	start_elementary_multiply = time.time()
-	z = x * y
+	elementary_multiply(x, y)
 	end_elementary_multiply = time.time()
-	print("Time for Elementary Multiplication O(n^2):",  end_elementary_multiply - start_elementary_multiply)
+	print("Time for Elementary Multiplication O(n^2):",  end_elementary_multiply - start_elementary_multiply, 's')
 
 
 if __name__ == "__main__":
