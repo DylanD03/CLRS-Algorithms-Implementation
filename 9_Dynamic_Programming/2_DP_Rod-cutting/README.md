@@ -1,15 +1,17 @@
 # Rod cutting problem
 ```
 Description: 
-"Given a rod of length n and array prices of length n denoting the cost of pieces of the rod of length 1 to n, find the maximum amount that can be made if the rod is cut up optimally." 
-						- quoted from interviewbit.com
+Given a rod of length n and array prices of length n denoting the cost of pieces of the rod of length 1 to n, find the maximum amount 
+that can be made if the rod is cut up optimally.
+ - quoted from interviewbit.com
 
 
 # rod-cutting problem using the bottom-up approach:
+```
 
-![Example Usage](/9_Dynamic_Progamming/2_DP_Rod-cutting/sample_BU.png?raw=true)
+![Example Usage](/9_Dynamic_Programming/2_DP_Rod-cutting/sample_BU.png?raw=true)
 
-
+```
 # memoization: 
 
 	Initialize all table entries with a special "not computed" flag
@@ -27,4 +29,4 @@ Description:
 # rod-cutting with top-down approach using memoization:
 ```
 
-![Example Usage](/9_Dynamic_Progamming/2_DP_Rod-cutting/sample_TD.png?raw=true)
+![Example Usage](/9_Dynamic_Programming/2_DP_Rod-cutting/sample_TD.png?raw=true)
