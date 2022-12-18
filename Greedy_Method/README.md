@@ -9,4 +9,4 @@ Output: burst
 
 Example usage and output can be found in the mountain_climbing.jpg picture.
 
-![Example Usage](/6_Greedy_Method/Example-Usage.png?raw=true)
+![Example Usage](/Greedy_Method/Example-Usage.png?raw=true)

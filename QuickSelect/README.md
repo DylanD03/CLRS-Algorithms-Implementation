@@ -4,4 +4,4 @@ Usage:
 The compiled object file is named QuickSelect. Example usage:
 	./QuickSelect 
 
-![Example Usage](/4_QuickSelect/Example-Usage.png?raw=true)
+![Example Usage](/QuickSelect/Example-Usage.png?raw=true)

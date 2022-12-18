@@ -9,7 +9,7 @@ that can be made if the rod is cut up optimally.
 # rod-cutting problem using the bottom-up approach:
 ```
 
-![Example Usage](/9_Dynamic_Programming/2_DP_Rod-cutting/sample_BU.png?raw=true)
+![Example Usage](/Dynamic_Programming/2_DP_Rod-cutting/sample_BU.png?raw=true)
 
 ```
 # memoization: 
@@ -29,4 +29,4 @@ that can be made if the rod is cut up optimally.
 # rod-cutting with top-down approach using memoization:
 ```
 
-![Example Usage](/9_Dynamic_Programming/2_DP_Rod-cutting/sample_TD.png?raw=true)
+![Example Usage](/Dynamic_Programming/2_DP_Rod-cutting/sample_TD.png?raw=true)

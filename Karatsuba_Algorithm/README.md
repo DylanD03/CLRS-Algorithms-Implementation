@@ -34,6 +34,6 @@ r - p - q
 To run the program use:
 	python3 karatsuba_algorithm.py
 ```
-![Example Usage](/8_Karatsuba_Algorithm/Example-Usage.png?raw=true)
+![Example Usage](/Karatsuba_Algorithm/Example-Usage.png?raw=true)
 
 

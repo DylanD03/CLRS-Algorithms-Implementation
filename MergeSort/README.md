@@ -1,1 +1,1 @@
-![Example Usage](/2_MergeSort/Merge_sort.png?raw=true)
+![Example Usage](/MergeSort/Merge_sort.png?raw=true)
